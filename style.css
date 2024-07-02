@@ -93,3 +93,75 @@ body{
 .footer a{
     text-decoration: none;
 }
+#overlay{
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    
+}
+#gameResult{
+    font-size: 64px;
+}
+#newRoundBtn{
+    font-size: 32px;
+    border: 8px solid;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #171614;
+    color: #F0EDEE ;
+}
+#newRoundBtn:hover{
+    color: #171614;
+    background-color: #DCF763;
+    cursor: pointer;
+}
+
+
+#overlay.overlayIn{
+    display: block;
+    animation: overlayIn 2s ease-in forwards;
+}
+
+#overlay.overlayOut{
+    display: none;
+    animation: overlayOut 2s ease-in forwards;
+}
+
+
+@keyframes overlayIn {
+    0% {
+        display: none;
+        background-color: rgba(0,0,0,0);
+        opacity: 0;
+    }
+
+    100% {
+        display: flex;
+        background-color: rgba(0,0,0,0.8);
+        opacity: 1;
+    }
+  }
+
+@keyframes overlayOut {
+    0% {
+        display: flex;
+        background-color: rgba(0,0,0,0.8);
+        opacity: 1;
+    }
+    
+    100% {
+        display: none;
+        background-color: rgba(0,0,0,0);
+        opacity: 0;
+    }
+  }

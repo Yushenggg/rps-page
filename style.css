@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
 
-.header h2, .heading{
+body{
     font-family: Bungee,sans-serif;
-    font-size: 48px;
-    margin: 32px 0;
+    color: #F0EDEE;
+}
+
+.header h2, .heading{
+    max-width: 1200px;
+    font-family: Bungee,sans-serif;
+    font-size: 36px;
+    margin: 2cqh 0;
     color: #F0EDEE;
 
 }
@@ -23,7 +29,7 @@
 
 }
 .heading{
-    margin:12px auto;
+    margin:4cqh auto 2cqh auto;
     font-size: 24px;
 }
 .center{
@@ -31,36 +37,51 @@
     text-align: center;
 }
 .humanChoice,.computerChoice{
-    box-sizing: content-box;
+    padding: 0;
     display: flex;
     flex: 0 1 auto;
-    justify-content:center;
-    gap: 5%;
+    justify-content:space-around;
+    
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 700px;
 }
-.humanChoice div, .computerChoice div{
-
-    background-color: transparent;
-    box-shadow: none;
+.humanChoice li, .computerChoice li{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1vw solid #F0EDEE;
+    border: 8px solid #F0EDEE;
     border-radius: 12px;
     aspect-ratio: 1/1;
     width: 25%;
 }
-.humanChoice div:hover{
-    background-color: #494949;
+.humanChoice li:hover{
+    border:8px solid #1C7C54;
+    cursor: pointer;
+}
+
+.selected{
+    background-color: #707070;
+
 }
 
 .humanChoice img, .computerChoice img{
     
-    margin: 2vw;
+    margin: 1cqw;
     width: 60%;
     height: 60%;
     max-width: 200px;
     max-height: 200px;
+}
+#result{
+    font-size: 64px;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.scoreboard div{
+    font-size: 32px;
 }
 

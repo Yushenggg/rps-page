@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<script src="javascript.js"></script>
+
     
     <div class="header">
         <h2>Rock Paper Scissors</h2>
@@ -16,20 +16,41 @@
     <div class="page">
         <div class="center">
             <h2 class="heading">Your Choice</h2>
-            <div class="humanChoice">
-                <div> <img src="images/hand-rock.svg" alt=""></div>
-                <div><img src="images/hand-paper.svg" alt=""></div>
-                <div><img src="images/hand-scissor.svg" alt=""></div>
-            </div>
+            <ul class="humanChoice">
+                <li id="clickRock"> <img src="images/hand-rock.svg" alt=""></li>
+                <li id="clickPaper"><img src="images/hand-paper.svg" alt=""></li>
+                <li id="clickScissor"><img src="images/hand-scissor.svg" alt=""></li>
+            </ul>
 
             <h2 class="heading">Opponent Choice</h2>
-            <div class="computerChoice">
-                <div> <img src="images/hand-rock.svg" alt=""></div>
-                <div><img src="images/hand-paper.svg" alt=""></div>
-                <div><img src="images/hand-scissor.svg" alt=""></div>
+            <ul class="computerChoice">
+                <li id="selectRock"> <img src="images/hand-rock.svg" alt=""></li>
+                <li id="selectPaper"><img src="images/hand-paper.svg" alt=""></li>
+                <li id="selectScissor"><img src="images/hand-scissor.svg" alt=""></li>
+            </ul>
+
+            <h2>Result</h2>
+            <h1 id="result">Pick a choice</h1>
+            
+            <h2>Scoreboard</h2>
+            <div class="scoreboard">
+                <div>
+                    <h2>Wins</h2>
+                    <h1 id="win">0</h1>
+                </div>
+                <div>
+                    <h2>Draw</h2>
+                    <h1 id="draw">0</h1>
+                </div>
+                <div>
+                    <h2>Loss</h2>
+                    <h1 id="loss">0</h1>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="javascript.js"></script>
   </body>
 </html>
 

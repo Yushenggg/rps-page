@@ -3,6 +3,7 @@
 body{
     font-family: Bungee,sans-serif;
     color: #F0EDEE;
+    margin: 0;
 }
 
 .header h2, .heading{
@@ -17,7 +18,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 5px solid ;
     background-color:#2F6690;
     text-align: center;
 }
@@ -84,4 +84,12 @@ body{
 .scoreboard div{
     font-size: 32px;
 }
-
+.footer{
+    background-color: #2F6690;
+    font-family: system-ui;
+    text-align: center;
+    padding: 6px 0;
+}
+.footer a{
+    text-decoration: none;
+}

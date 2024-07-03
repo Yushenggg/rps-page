@@ -41,21 +41,19 @@ body{
     display: flex;
     flex: 0 1 auto;
     justify-content:space-around;
-    
+    gap: 8px;
     flex-wrap: wrap;
     max-width: 700px;
 }
 .humanChoice li, .computerChoice li{
     list-style-type: none;
-    min-width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 8px solid #F0EDEE;
     border-radius: 12px;
     aspect-ratio: 1/1;
-    min-width: 120px;
-    margin-bottom: 16px;
+    flex:1 1 0;
 }
 .humanChoice li:hover{
     border:8px solid #1C7C54;
